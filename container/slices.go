@@ -30,4 +30,10 @@ func main(){
 	updateSlice(slice1)
 	fmt.Println("after update arr = " ,arr)
 	fmt.Println("after update slice1 = " ,slice1)
+
+	//添加元素时，如果超越cap，系统会重新分配更大的底层数组
+	//由于值传递的关系，必须接收append的返回值
+	s3 := append(s2, 10)
+	fmt.Println(s3)
+
 }
