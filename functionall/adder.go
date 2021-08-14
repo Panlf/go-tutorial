@@ -6,8 +6,8 @@ func adder() func(int) int {
 	sum := 0
 
 	return func(v int) int {
-		sum += v;
-		return sum;
+		sum += v
+		return sum
 	}
 }
 
